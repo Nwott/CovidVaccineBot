@@ -1,2 +1,2 @@
-# CovidVaccineBot
+# Covid Vaccine Bot
  
