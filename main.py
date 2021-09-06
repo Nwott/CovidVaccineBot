@@ -72,7 +72,7 @@ def check_loop(counter):
   today = date.today()
   d1 = today.strftime("%m")
   time.sleep(5)
-  # check if it's on may i forgot to do for june ill do it later
+  # check if it's on may
   if d1 == "05":
     # find table for location
     table = driver.find_element_by_xpath(xpath)
@@ -127,9 +127,7 @@ def check_loop(counter):
         check_loop(0)
       # if there are more than 0 available days  
       elif len(available_days) > 0:
-        # why did i name it early days idk it doesnt make sense whatever
         early_days = []
-        # check each available day to see if it's before june 14 yeah my dad changed it from june 6th to 14th yay cool
         for day in available_days:
           if int(day.text) <= 14:
             # add to list of days before june 14th
@@ -191,9 +189,7 @@ def check_loop(counter):
         check_loop(0)
       # if there are more than 0 available days  
       elif len(available_days) > 0:
-        # why did i name it early days idk it doesnt make sense whatever
         early_days = []
-        # check each available day to see if it's before june 14 yeah my dad changed it from june 6th to 14th yay cool
         for day in available_days:
           if int(day.text) <= 14:
             # add to list of days before june 14th
